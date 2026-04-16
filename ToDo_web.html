@@ -1,0 +1,46 @@
+<!-- ===================== HTML (index.html) ===================== -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tarefas</title>
+
+    <!-- Importando o CSS externo -->
+    <link rel="stylesheet" href="ToDo_style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Lista de Tarefas</h1>
+
+    <!-- Campo para cadastrar tarefa -->
+    <input type="text" id="tarefa" placeholder="Digite a tarefa">
+
+    <!-- Campo para cadastrar prazo -->
+    <input type="date" id="prazo">
+
+    <!-- Botão para adicionar tarefa -->
+    <button onclick="adicionarTarefa()">Adicionar Tarefa</button>
+
+    <!-- Tabela de tarefas -->
+    <table>
+        <thead>
+            <tr>
+                <th>Tarefa</th>
+                <th>Prazo</th>
+                <th>Concluído</th>
+                <th>Excluir</th>
+            </tr>
+        </thead>
+        <tbody id="listaTarefas">
+            <!-- As tarefas serão inseridas aqui via JavaScript -->
+        </tbody>
+    </table>
+</div>
+
+<!-- Importando o JavaScript externo -->
+<script src="ToDo_script.js"></script>
+
+</body>
+</html>
